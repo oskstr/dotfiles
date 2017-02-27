@@ -9,7 +9,7 @@ ln -s ~/dotfiles/authinfo.gpg ~/.authinfo.gpg
 ln -s ~/dotfiles/bashrc ~/.bashrc
 ln -s ~/dotfiles/bashrc.d ~/.bashrc.d
 ln -s ~/dotfiles/bin ~/.bin
-ln -s ~/dotfiles/.emacs.d ~/.emacs.d
+ln -s ~/dotfiles/emacs.d ~/.emacs.d
 ln -s ~/dotfiles/git ~/.git
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 ln -s ~/dotfiles/gitignore ~/.gitignore
