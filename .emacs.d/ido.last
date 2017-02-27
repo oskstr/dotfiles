@@ -1,0 +1,88 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/oskar/Code/Python/" . "mazesolving/")
+ ("/home/oskar/Code/Matlab/" . "Exempel/")
+ ("/home/oskar/.emacs.d/elpa/" . "jedi-20160425.2156/")
+ ("/home/oskar/.emacs.d/" . "elpa/")
+ ("/" . "home/")
+ ("/usr/" . "local/")
+ ("/home/oskar/Code/" . "Python/")
+ ("/home/" . "oskar/")
+ ("/home/oskar/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/oskar/.emacs.d/"
+ "/home/oskar/Code/Python/mazesolving/"
+ "/home/oskar/Code/mazesolving/"
+ "/home/oskar/Code/Matlab/Exempel/"
+ "/home/oskar/Code/Matlab/machin/"
+ "/home/oskar/Code/"
+ "/home/oskar/.emacs.d/elpa/jedi-20160425.2156/"
+ "/home/oskar/Documents/"
+ "/home/oskar/Code/org/"
+ "/home/oskar/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "sensible-defaults.el"
+ "astar.py"
+ "configuration.org"
+ "solve.py"
+ "breadthfirst.py"
+ "mazes.py"
+ "factory.py"
+ "leftturn.py"
+ "dijkstra.py"
+ "depthfirst.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/oskar/.emacs.d/" (22708 1219 660229 109000) "elpa/" "sensible-defaults.el" "ido.last~" "_minted-configuration/" "session.1050094055b2065a214871330324201300000011350038" "ac-comphist.dat" "smex-items" "init.el" "../" "configuration.org~" "session.10c8fa09a4576bcf62147327779415321200000010130070" "auto-save-list/" "eshell/" "session.1043a82546de8979ca147293088980718000000010300042" "configuration.org" "./" "configuration.el" "configuration.pdf" "configuration.tex" "srecode-map.el" "kkcrc" "ido.last" "sensible-defaults.el~" "configuration.html")
+
+ ("/home/oskar/Code/Python/mazesolving/" (22708 571 359977 441000) ".gitignore" "#%2Aediff-merge%2A#31608zQJ#" "out.png" "README.md" "LICENSE" "astar.pyc" ".git/" "FibonacciHeap.pyc" "priority_queue.py" "profile.py" "examples/" "astar.py" "solve.py" "mazes.pyc" "../" "factory.pyc" "depthfirst.py" "factory.py" "leftturn.py" "breadthfirst.py" "./" "mazes.py" "FibonacciHeap.py" "breadthfirst.pyc" "dijkstra.py")
+
+ ("/home/oskar/Code/Matlab/machin/" (22691 58772 387159 65000) "license.txt" "../" "machin.m" "machin0.m" "./" "octave-workspace")
+
+ ("/home/oskar/Code/mazesolving/" (22705 48688 428407 543000) ".gitignore" "out.png" "README.md" "LICENSE" ".git/" "examples/" "astar.py" "solve.py" "mazes.pyc" "../" "factory.pyc" "depthfirst.py" "factory.py" "leftturn.py" "breadthfirst.py" "./" "mazes.py" "FibonacciHeap.py" "breadthfirst.pyc" "dijkstra.py")
+
+ ("/home/oskar/Code/" (22705 48611 67400 261000) "test_html.html" "test.py" "text.txt" "mazesolving/" "Git/" "Java/" "Bash/" "../" "org/" "./" "mazes.py" "test.py~" "Postal/" "Matlab/" "octave-workspace" "Python/")
+
+ ("/home/oskar/Code/Python/" (22705 44335 975919 344000) "mazesolving/" "hello.py" "hello2.py" "../" "hello2.py~" "./")
+
+ ("/home/oskar/" (22705 34345 178288 234000) "out-0002.pdf" ".adobe/" "My Games/" ".gscan2pdf" ".python_history" ".swt/" ".spe/" ".dbus/" "out-0001.pdf" "Code/" "out-0001.pnm" "Downloads/" "install" ".gnome2/" "Desktop/" "test/" ".marks/" "Templates/" "PlayOnLinux's virtual drives/" ".bash_logout" ".emacs.d/" ".tooling/" ".p2/" ".octave_hist" ".gnome2_private/" "out-0002.pnm" "workspace/" "TEST" ".dreampie" ".gtkrc-2.0" ".thumbnails/" "..emacs.swp" ".profile" "hanna.pdf" ".gitconfig" ".spamassassin/" "Documents/" ".AMD/" ".reinteract/" ".eclipse/" "#TUTORIAL#" ".ICEauthority" ".viminfo" ".texmf-var/" ".cache/" "Steam/" ".steampid" "Videos/" "TUTORIAL~" ".ipython/" ".emacs~" "lua-5.3.3.tar.gz" ".atom.bak/" ".sane/" "Release.key" "hello.html~" ".macromedia/" ".bashrc" "gPodder/" "Addons/" ".gnome/" "Pictures/" ".pki/" ".gnuplot_history" "../" ".steampath" ".idlerc/" ".local/" ".supertux2/" ".gimp-2.8/" ".swp" ".pulse-cookie" ".hplip/" "Aux-Addon.zip" ".pylint.d/" "peek-0.7.2-Linux.deb" ".gconf/" "arc-icon-theme/" ".emacs.old" ".steam/" "Public/" ".atom/" ".nano/" ".mozilla/" "eclipse/" ".aptitude/" ".icons/" "./" "lua-5.3.3/" ".m2/" "Music/" ".gnupg/" ".config/" ".sudo_as_admin_successful" "POL-old-icons/" ".oracle_jre_usage/" ".PlayOnLinux/" "tutor" "VirtualBox VMs/" ".ssh/" "octave-workspace" ".bash_history" "TUTORIAL" ".pam_environment" ".emacs.old2")
+
+ ("/home/oskar/Code/Matlab/Test/" (22691 57132 525676 650000) "test.m" "../" "./")
+
+ ("/home/oskar/Code/Matlab/Exempel/" (22581 46863 721738 636000) "wilkpoly.m" "../" "./")
+
+ ("/home/oskar/Code/Matlab/" (22581 46810 260995 248000) "machin/" "../" "Exempel/" "./")
+
+ ("/home/oskar/.emacs.d/elpa/jedi-20160425.2156/" (22503 1557 520237 48000) "jedi-pkg.elc" "jedi-autoloads.el" "jedi-pkg.el" "jedi.elc" "../" "jedi.el" "./")
+
+ ("/home/oskar/.emacs.d/elpa/" (22503 1903 804858 722000) "jedi-20160425.2156/" "org-bullets-20140918.1137/" "atom-one-dark-theme-20160914.1337/" "linum-relative-20160510.118/" "auto-complete-20160827.649/" "popup-20160709.729/" "hlinum-readme.txt" "ido-ubiquitous-20160623.815/" "org-20160919/" "python-environment-20150310.153/" "ac-math-20141116.1327/" "elpy-readme.txt" "elpy-20160903.841/" "highlight-indentation-20150307.208/" "#elpy-readme.txt#" "find-file-in-project-20160909.1355/" "virtualenv-20140220.1501/" "deferred-20160109.2046/" "jedi-core-20160709.722/" "dash-20160820.501/" "python-mode-20160911.1032/" "ac-octave-20150111.1708/" "archives/" "ivy-20160923.551/" "org-20160919.signed" "atom-dark-theme-20151119.2335/" "../" "epc-20140609.2234/" "ido-completing-read+-20160623.815/" "htmlize-20130207.1202/" "flx-ido-20151030.1112/" "org-ac-readme.txt" "s-20160922.443/" "auto-virtualenv-20160220.636/" "ctable-20140304.1659/" "auto-virtualenv-readme.txt" "yasnippet-20160801.1142/" "./" "company-20160829.1206/" "ido-vertical-mode-20160429.1037/" "flx-20151030.1112/" "smex-20151212.1409/" "pyvenv-20160527.442/" "ox-twbs-20160915.207/" "literate-starter-kit-20150730.1154/" "concurrent-20160109.2046/" "airplay-readme.txt" "math-symbol-lists-20160302.1431/" "gnupg/")
+
+ ("/home/oskar/Documents/" (22686 2273 292479 114000) "My Games/" "tabeller_gk.pdf" "wget-magic.txt" "Extentor/" "Komplex Analys/" "wget-magic.txt~" "Mekanik Fortsättningskurs/" "20161127141020_0.pdf" "Reinteract/" "mail" "../" "Kalles Dator.odt" ".goutputstream-SJ3NRY" "Diff Trans Del 2/" "./" "machoman1337.odt" "LaTeX/" "emacs-commands.org" "realmlist.txt" "Numeriska Metoder/")
+
+ ("/usr/local/" (22055 46013 0 0) "etc/" "man/" "share/" "sbin/" "../" "games/" "src/" "bin/" "./" "lib/" "include/")
+
+ ("/home/oskar/Code/org/" (22503 504 678129 97000) "test.org~" "test.org" "test.tex" "test.html" "test.pdf" "../" "test.html~" "_minted-test/" "./" "test.tex~")
+
+ ("/usr/" (22297 17327 445806 157000) "local/" "share/" "sbin/" "../" "games/" "src/" "bin/" "lib32/" "./" "lib/" "include/")
+
+ ("/usr/share/" (22494 45145 466321 685000) "dnsmasq-base/" "apt/" "debconf/" "libthai/" "python-pycparser/" "sysv-rc/" "package-data-downloads/" "avahi/" "doc/" "texmf/" "texmaker/" "vim/" "texlive/" "secureboot/" "i18n/" "gnome-bluetooth/" "gnome-settings-daemon-3.0/" "libsensors4/" "iptables/" "media-player-info/" "sgml/" "base-files/" "caribou/" "python-apt/" "locales/" "jetty8/" "desktop-directories/" "dbus-1/" "color/" "xml-core/" "fglrx/" "GConf/" "readline/" "accounts/" "yelp/" "fonts-droid/" "libgnomekbd/" "python-wxgtk2.8/" "python3-pycparser/" "mime/" "qt4/" "skypeforlinux/" "keyrings/" "intltool-debian/" "software-properties/" "locale/" "app-install/" "hplip/" "gnome-online-accounts/" "nm-applet/" "gutenprint/" "initramfs-tools/" "software-center/" "java/" "gtk-engines/" "ant/" "gnome-shell/" "p11-kit/" "python3/" "virtualbox/" "libwacom/" "fish/" "thumbnailers/" "enchant/" "lintian/" "resolvconf/" "gnome-session/" "libreoffice/" "octave/" "pam/" "rkhunter/" "dconf/" "rhythmbox/" "aspell/" "debhelper/" "GeoIP/" "gnome/" "xml/" "gnome-sudoku/" "menu/" "language-tools/" "vte/" "apturl/" "polkit-1/" "gstreamer-1.0/" "ati/" "python/" "grilo-plugins/" "deja-dup/" "libgweather/" "itstool/" "usb_modeswitch/" "evolution/" "ubufox/" "language-selector/" "gnome-color-manager/" "asymptote/" "ufw/" "gnome-mahjongg/" "insserv/" "X11/" "libnm-gtk/" "hyphen/" "dpkg/" "evince/" "farstream/" "spotify/" "gnome-2.0/" "gimp/" "gnome-documents/" "pixmaps/" "unattended-upgrades/" "common-licenses/" "simple-scan/" "telepathy/" "netpbm/" "usb-creator/" "calendar/" "vlc/" "im-config/" "fonts/" "gitweb/" "libvisual-plugins-0.4/" "tex-common/" "update-manager/" "glib-2.0/" "man/" "vino/" "yelp-xsl/" "ccsm/" "zeitgeist/" "gstreamer-0.10/" "aclocal-1.15/" "mythes/" "liblouis/" "session-migration/" "examples/" "sgml-base/" "directfb-1.2.10/" "ppd/" "ppp/" "application-registry/" "libgphoto2/" "java-config/" "automake-1.15/" "evolution-data-server/" "gnome-user-share/" "tex4ht/" "backgrounds/" "pygtk/" "liblangtag/" "samba/" "misc/" "apps/" "ffmpeg/" "unity/" "gettext/" "foo2qpdl/" "yelp-tools/" "GraphicsMagick-1.3.21/" "gnome-settings-daemon/" "spamassassin/" "gcr-3/" "texinfo/" "groff/" "sounds/" "pam-configs/" "perl5/" "purple/" "systemd/" "aclocal/" "perl/" "adduser/" "latex-cjk-common/" "gnome-vpn-properties/" "transmission/" "menulibre/" "libaudio2/" "myspell/" "libexttextcat/" "dict/" "command-not-found/" "m17n/" "poppler/" "zenity/" "libquvi-scripts/" "openal/" "gnome-video-effects/" "bsd-mailx/" "help/" "language-support/" "libc-bin/" "jarwrapper/" "adium/" "gdb/" "webkitgtk-3.0/" "zoneinfo/" "ca-certificates/" "eog/" "debianutils/" "org.gnome.Weather/" "gconf/" "mousetweaks/" "fontconfig/" "alsa/" "emacs24/" "themes/" "cups/" "info/" "acpi-support/" "djvu/" "gtksourceview-3.0/" "ibus/" "oneconf/" "libparse-debianchangelog-perl/" "consolefonts/" "bug/" "update-notifier/" "gtk-doc/" "hunspell/" "playonlinux/" "seahorse/" "cogl/" "tcltk/" "systemtap/" "tabset/" "git-core/" "apt-xapian-index/" "xul-ext/" "sushi/" "indicators/" "ImageMagick-6/" "nano/" "dh-python/" "gnuplot/" "wine/" "pulseaudio/" "qt5/" "dns/" "mozilla/" "totem/" "ibus-table/" "mobile-broadband-provider-info/" "pstoedit/" "man-db/" "idl/" "indicator-application/" "aisleriot/" "tomcat7/" "ubuntu-drivers-common/" "eclipse/" "grub/" "ubuntu-release-upgrader/" "hwdata/" "speech-dispatcher/" "emacs/" "brltty/" "xdiagnose/" "zsh/" "pnm2ppa/" "mime-info/" "consoletrans/" "aglfn/" "mimelnk/" "atom/" "midi/" "ibus-pinyin/" "popularity-contest/" "base-passwd/" "pkgconfig/" "guile/" "bash-completion/" "xsessions/" "kde4/" "dictionaries-common/" "brasero/" "hal/" "rubygems-integration/" "qtchooser/" "gvfs/" "alsa-base/" "nautilus-share/" "gedit/" "gcc-5/" "gnome-background-properties/" "gnome-tweak-tool/" "compiz/" "file/" "system-config-printer/" "snmp/" "lcdf-typetools/" "os-prober/" "locale-langpack/" "orca/" "console-setup/" "tracker/" "binfmts/" "aptitude/" "gnome-mines/" "colord/" "gupnp-av/" "ssl-cert/" "gnome-maps/" "postfix/" "help-langpack/" "file-roller/" "autoconf/" "icons/" "apport/" "foo2zjs/" "linux-sound-base/" "ca-certificates-java/" "pyzy/" "rsyslog/" "cm-super/" "gupnp-dlna-2.0/" "chromium-browser/" "fonts-font-awesome/" "hardening-includes/" "appdata/" "maven-repo/" "gnome-control-center/" "gst-plugins-base/" "gir-1.0/" "javazi/" "applications/" "javascript/" "terminator/" "ghostscript/" "mysql-common/" "lightdm/" "doc-base/" "gnupg/" "upstart/" "empathy/" "gnome-music/" "gdm/" "../" "./")
+
+ ("/usr/share/info/" (22469 23351 225889 888000) "diffutils.info.gz" "sed.info.gz" "epspdf.info.gz" "tlbuild.info.gz" "automake-1.15.info-2.gz" "latex2man.info.gz" "speech-dispatcher.info.gz" "latex2e.info.gz" "time.info.gz" "find.info.gz" "gnupg1.info.gz" "spd-say.info.gz" "automake-1.15.info.gz" "mf2pt1.info.gz" "tds.info.gz" "nano.info.gz" "asymptote.info.gz" "m4.info-2.gz" "web2c.info.gz" "dvipng.info.gz" "fastjar.info.gz" "coreutils.info.gz" "dir" "grub-dev.info.gz" "gettext.info.gz" "../" "bc.info.gz" "m4.info.gz" "kpathsea.info.gz" "texdraw.info.gz" "dir.old" "ed.info.gz" "grep.info.gz" "ssip.info.gz" "emacs-24/" "dvips.info.gz" "mtools.info.gz" "eplain.info.gz" "fontname.info.gz" "rluserman.info.gz" "gzip.info.gz" "grub.info.gz" "./" "autosprintf.info.gz" "m4.info-1.gz" "asy-faq.info.gz" "dc.info.gz" "latex2e-es.info.gz" "wget.info.gz" "automake-1.15.info-1.gz")
+
+ ("/home/oskar/.oracle_jre_usage/" (22415 64165 233743 901000) "5fb0bf93e1509249.timestamp" "../" "./")
+
+ ("/home/" (22297 16008 352871 109000) "oskar/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
