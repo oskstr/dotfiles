@@ -132,6 +132,19 @@ pairing or presenting code.
     (global-hl-line-mode))
 #+END_SRC
 
+* Octave
+Configuration of Octave and *Inferior Octave* shell.
+
+Up and down arrows fetch previous entries.
+#+BEGIN_SRC emacs-lisp
+(add-hook 'inferior-octave-mode-hook
+          (lambda ()
+            (turn-on-font-lock)
+            (define-key inferior-octave-mode-map [up]
+              'comint-previous-input)
+            (define-key inferior-octave-mode-map [down]
+              'comint-next-input)))
+#+END_SRC
 * Publishing and task management with Org-mode
 ** Display preferences
 
