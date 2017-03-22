@@ -161,30 +161,26 @@ I like seeing a little downward-pointing arrow instead of the usual ellipsis
 (=...=) that org displays when there's stuff under a header.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq org-ellipsis "⤵"))
+(setq org-ellipsis "⤵")
 #+END_SRC
 
 Use syntax highlighting in source blocks while editing.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq org-src-fontify-natively t))
+(setq org-src-fontify-natively t)
 #+END_SRC
 
 Make TAB act as if it were issued in a buffer of the language's major mode.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq org-src-tab-acts-natively t))
+(setq org-src-tab-acts-natively t)
 #+END_SRC
 
 When editing a code snippet, use the current window rather than popping open a
 new one (which shows the same information).
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq org-src-window-setup 'current-window))
+(setq org-src-window-setup 'current-window)
 #+END_SRC
 
 ** Task and org-capture management
@@ -193,45 +189,41 @@ of an index file (my main todo list), and archive finished tasks in
 =~/org/archive.org=.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq org-directory "~/org")
+(setq org-directory "~/org")
 
-  (defun org-file-path (filename)
-    "Return the absolute address of an org file, given its relative name."
-    (concat (file-name-as-directory org-directory) filename))
+(defun org-file-path (filename)
+  "Return the absolute address of an org file, given its relative name."
+  (concat (file-name-as-directory org-directory) filename))
 
-  (setq org-index-file (org-file-path "index.org"))
-  (setq org-archive-location
-        (concat (org-file-path "archive.org") "::* From %s")))
+(setq org-index-file (org-file-path "index.org"))
+(setq org-archive-location
+      (concat (org-file-path "archive.org") "::* From %s"))
 #+END_SRC
 
 I store all my todos in =~/org/index.org=, so I'd like to derive my agenda from
 there.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq org-agenda-files (list org-index-file)))
+(setq org-agenda-files (list org-index-file))
 #+END_SRC
 
 Hitting =C-c C-x C-s= will mark a todo as done and move it to an appropriate
 place in the archive.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (defun mark-done-and-archive ()
-    "Mark the state of an org-mode item as DONE and archive it."
-    (interactive)
-    (org-todo 'done)
-    (org-archive-subtree))
+(defun mark-done-and-archive ()
+  "Mark the state of an org-mode item as DONE and archive it."
+  (interactive)
+  (org-todo 'done)
+  (org-archive-subtree))
 
-  (define-key global-map "\C-c\C-x\C-s" 'mark-done-and-archive))
+(define-key global-map "\C-c\C-x\C-s" 'mark-done-and-archive)
 #+END_SRC
 
 Record the time that a todo was archived.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq org-log-done 'time))
+(setq org-log-done 'time)
 #+END_SRC
 
 *** Capturing tasks
@@ -310,37 +302,31 @@ Hit =M-n= to quickly open up a capture template for a new todo.
 Allow export to markdown and beamer (for presentations) and Twitter Bootstrap.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (require 'ox-md)
-  (require 'ox-beamer)
-  (require 'ox-twbs)
-)
+;;(require 'ox-md)
+;;(require 'ox-beamer)
 #+END_SRC
 
 Allow =babel= to evaluate Emacs lisp, Ruby, dot, or Gnuplot code.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
 (org-babel-do-load-languages
    'org-babel-load-languages
    '((emacs-lisp . t)
      (python . t)
-     (gnuplot . t))))
+     (gnuplot . t)))
 #+END_SRC
 
 Don't ask before evaluating code blocks.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq org-confirm-babel-evaluate nil))
+(setq org-confirm-babel-evaluate nil)
 #+END_SRC
 
 Translate regular ol' straight quotes to typographically-correct curly quotes
 when exporting.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
- (setq org-export-with-smart-quotes t))
+(setq org-export-with-smart-quotes t)
 #+END_SRC
 
 *** Exporting to HTML
@@ -349,8 +335,7 @@ Don't include a footer with my contact and publishing information at the bottom
 of every exported HTML document.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
- (setq org-html-postamble nil))
+(setq org-html-postamble nil)
 #+END_SRC
 
 *** Exporting to PDF
@@ -361,19 +346,17 @@ that seems to be with the =minted= package, but that package shells out to
 this enables that.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq org-latex-pdf-process
-        '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-          "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-          "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f")))
+(setq org-latex-pdf-process
+      '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
 #+END_SRC
 
 Include the =minted= package in all of my LaTeX exports.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (add-to-list 'org-latex-packages-alist '("" "minted"))
-  (setq org-latex-listings 'minted))
+(add-to-list 'org-latex-packages-alist '("" "minted"))
+(setq org-latex-listings 'minted)
 #+END_SRC
 
 ** TeX configuration
@@ -384,16 +367,14 @@ org-mode, so I'm keeping them together.
 Automatically parse the file after loading it.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq TeX-parse-self t))
+(setq TeX-parse-self t)
 #+END_SRC
 
 Always use =pdflatex= when compiling LaTeX documents. I don't really have any
 use for DVIs.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (setq TeX-PDF-mode t))
+(setq TeX-PDF-mode t)
 #+END_SRC
 
 Enable a minor mode for dealing with math (it adds a few useful keybindings),
@@ -401,11 +382,10 @@ and always treat the current file as the "main" file. That's intentional, since
 I'm usually actually in an org document.
 
 #+BEGIN_SRC emacs-lisp
-(with-eval-after-load 'org
-  (add-hook 'LaTeX-mode-hook
-            (lambda ()
-              (LaTeX-math-mode)
-              (setq TeX-master t))))
+(add-hook 'LaTeX-mode-hook
+          (lambda ()
+            (LaTeX-math-mode)
+            (setq TeX-master t)))
 #+END_SRC
 
 * Editing settings
